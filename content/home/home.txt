@@ -1,0 +1,11 @@
+Title: Home
+
+----
+
+Headline: Hello! I'm John Doe.
+
+----
+
+Image:
+
+- geometry.png

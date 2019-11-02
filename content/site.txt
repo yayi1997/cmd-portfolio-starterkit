@@ -1,0 +1,32 @@
+Title: John Doe
+
+----
+
+Address: 
+
+----
+
+Email: 
+
+----
+
+Phone: 
+
+----
+
+Social:
+
+- 
+  platform: Twitter
+  url: http://www.twitter.com
+- 
+  platform: Yoeran
+  url: https://www.yoeran.nl
+
+----
+
+Hallo: sdfasdfasdfasdfasdfasdfasdf
+
+----
+
+Twitter: twitter.com/robzooi
