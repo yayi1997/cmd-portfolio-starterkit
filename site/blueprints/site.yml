@@ -8,7 +8,7 @@ title: Site
 
 # The layout of this form has two columns:
 tabs:
-  content:
+  dashboard:
     columns:
       # The first column has one section for the subpages of the `photography` page in card layout
       # It reuses the pages section defined in `/site/blueprints/sections/albums.yml`
@@ -37,24 +37,27 @@ tabs:
 
   settings:
     fields:
-      address:
-        label: Address
-        type: textarea
+      logo:
+        label: Your logo
+        empty: Upload or select a logo
+        max: 1
+        type: files
+        template: image
+        layout: cards
+        size: tiny
+        accept: image/jpeg
       email:
-        label: Email
+        label: Your email address
         type: email
-      phone:
-        label: Phone
-        type: tel
       social:
-        label: On the web
+        label: Your social media
         type: structure
         fields:
           platform:
-            label: Platform
+            label: Platform name
             type: text
             width: 1/2
           url:
-            label: URL
+            label: Profile URL
             type: url
             width: 1/2

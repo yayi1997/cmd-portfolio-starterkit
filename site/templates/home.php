@@ -15,8 +15,10 @@
 <main>
 
 <h1><?= $page->headline() ?></h1>
-<?= $page->image() ?>
+<p><?= $page->text() ?></p>
+<?= $page->image()->html() ?>
 
+Tesrt
   <?php
   // we always use an if-statement to check if a page exists to prevent errors
   // in case the page was deleted or renamed before we call a method like `children()` in this case

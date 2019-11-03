@@ -13,10 +13,20 @@ options:
 # Here we define an info section and a pages section (`photography`)
 fields:
   headline:
+    label: Your introduction title
+    type: text
+    width: 1
+    required: true
+  text:
+    label: Your introduction text
     type: text
     width: 1
     required: true
   image:
+    label: Your introduction image
+    layout: cards
+    template: image
+    size: medium
     type: files
     multiple: false
 

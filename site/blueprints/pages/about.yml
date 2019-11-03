@@ -24,7 +24,7 @@ columns:
   - width: 1/2
     fields:
       text:
-        label: Text
+        label: Your backstory
         type: textarea
         size: huge
 
@@ -33,7 +33,10 @@ columns:
     # All available field types: https://getkirby.com/docs/reference/panel/fields
     fields:
       resume:
-        label: Resumé
+        label: Your resumé
         type: files
+        max: 1
         multiple: false
-        help: Upload hier je CV
+        empty: Upload or select a resumé
+        layout: cards
+        size: medium

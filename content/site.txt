@@ -1,8 +1,10 @@
-Title: John Doe
+Title: Robin Sinke
 
 ----
 
-Address: 
+Logo:
+
+- robinsinke.jpeg
 
 ----
 
@@ -10,23 +12,15 @@ Email:
 
 ----
 
-Phone: 
-
-----
-
 Social:
 
 - 
   platform: Twitter
-  url: http://www.twitter.com
+  url: https://twitter.com/robzooi
 - 
-  platform: Yoeran
-  url: https://www.yoeran.nl
+  platform: LinkedIn
+  url: https://www.linkedin.com/in/robinsinke/
 
 ----
 
-Hallo: sdfasdfasdfasdfasdfasdfasdf
-
-----
-
-Twitter: twitter.com/robzooi
+Image: - ipad.jpg
