@@ -26,8 +26,10 @@
 
   <div class="page">
     <header class="header">
-      <!-- In this link we call `$site->url()` to create a link back to the homepage -->
-      <a class="logo" href="<?= $site->url() ?>"><?= $site->title() ?></a>
+        <a class="logo" href="<?= $site->url() ?>">
+          <img src="<?= $site->image()->url() ?>" alt="<?= $site->image()->alt() ?>" />
+          <span><?= $site->title() ?></span>
+        </a>
       <nav id="menu" class="menu">
         <?php
         // In the menu, we only fetch listed pages, i.e. the pages that have a prepended number in their foldername
@@ -36,5 +38,6 @@
         foreach ($site->children()->listed() as $item): ?>
         <?= $item->title()->link() ?>
         <?php endforeach ?>
+        <a href="#social">Contact me</a>
       </nav>
     </header>

@@ -1,14 +1,17 @@
 <?php snippet('header') ?>
 <?php snippet('menu') ?>
 
+
 <section class="content article">
   <article>
-    <h1><?= $page->title()->html() ?></h1>
+    <?php snippet('intro') ?>
+    <p><?= $page->date()->toDate('d.m.Y') ?></p>
     <?= $page->text()->kirbytext() ?>
 
     <a href="<?= url('blog') ?>">Back…</a>
 
   </article>
 </section>
+
 
 <?php snippet('footer') ?>

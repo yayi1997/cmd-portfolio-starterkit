@@ -3,13 +3,13 @@
 
 <section class="content blog">
 
-  <h1><?= $page->title()->html() ?></h1>
-  <?= $page->text()->kirbytext() ?>
+  <?php snippet('intro') ?>
 
   <?php foreach($page->children()->listed()->flip()->paginate(9) as $article): ?>
 
   <article>
-    <h1><?= $article->title()->html() ?></h1>
+    <h2><a href="<?= $article->url() ?>"><?= $article->title()->html() ?></a></h2>
+    <p><?= $article->date()->toDate('d.m.Y') ?></p>
     <p><?= $article->text()->excerpt(300) ?></p>
     <a href="<?= $article->url() ?>">Read more…</a>
   </article>

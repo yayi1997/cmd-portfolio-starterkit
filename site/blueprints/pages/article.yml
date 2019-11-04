@@ -29,9 +29,7 @@ columns:
         fields:
           date:
             type: date
-            time: true
+            time: false
             default: now
           author:
             type: users
-          tags:
-            type: tags

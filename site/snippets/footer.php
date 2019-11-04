@@ -12,7 +12,7 @@
 
   <footer class="footer">
 
-    <nav class="social">
+    <nav class="social" id="social">
       <h3>Feel free to contact me</h3>
       <?php foreach ($site->social()->toStructure() as $social): ?>
       <a href="<?= $social->url() ?>"><?= $social->platform() ?></a>
