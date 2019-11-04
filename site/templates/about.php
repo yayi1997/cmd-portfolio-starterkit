@@ -20,7 +20,7 @@
     <aside>
       <section>
         <h2>Resume</h2>
-          <a href="<?= $page->resume()->html() ?>" target="_blank">Download resumé</a>
+          <a href="<?= $page->slug() ?>/<?= $page->resume()->html() ?>" target="_blank">Download resumé</a>
       </section>
     </aside>
 
