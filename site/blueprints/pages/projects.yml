@@ -4,10 +4,10 @@ icon: 🖼
 
 drafts:
   extends: sections/projects
-  headline: Project Drafts
+  headline: Drafts
   layout: cards
 
 listed:
   extends: sections/projects
-  headline: Published Projects
+  headline: Published
   layout: cards

@@ -2,14 +2,8 @@ Title: Home
 
 ----
 
-Headline: Hello! I'm John Doe.
+Introductiontitle: Hello! I'm John Doe.
 
 ----
 
-Text: Currently I am looking for an internship where I can develop my skills as a third year communication and multimediadesign student.
-
-----
-
-Image:
-
-- ipad.jpg
+Introductiontext: Currently I am looking for an internship where I can develop my skills as a third year Communication and Multimediadesign student.

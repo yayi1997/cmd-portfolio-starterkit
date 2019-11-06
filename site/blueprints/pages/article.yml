@@ -17,19 +17,24 @@ columns:
   main:
     width: 2/3
     fields:
+      date:
+        type: date
+        label: Date published
+        time: false
+        default: now
       text:
+        label: Your text
         type: textarea
         size: large
 
   sidebar:
     width: 1/3
     sections:
-      meta:
-        type: fields
-        fields:
-          date:
-            type: date
-            time: false
-            default: now
-          author:
-            type: users
+      thumbnail:
+        headline: Preview image
+        type: files
+        template: thumbnail
+        empty: Upload your preview image (File format JPEG, PNG or SVG)
+        layout: cards
+        multiple: false
+        max: 1

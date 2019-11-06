@@ -1,0 +1,15 @@
+title: document
+
+accept:
+  mime: application/pdf
+
+columns:
+  - width: 1/1
+    sections:
+      content:
+        type: fields
+        fields:
+          caption:
+            label: Caption
+            type: textarea
+            size: medium

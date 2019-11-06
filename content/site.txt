@@ -2,11 +2,13 @@ Title: Robin Sinke
 
 ----
 
-Logo: - robinsinke.jpeg
+Logo:
+
+- robinsinke.jpeg
 
 ----
 
-Email: 
+Email: r.sinke@hr.nl
 
 ----
 

@@ -1,6 +1,6 @@
 type: pages
-headline: Blog
-parent: kirby.page("blog")
+headline: Articles
+parent: kirby.page("articles")
 info: "{{ page.date.toDate('d.m.Y') }}"
 template: article
 empty: No articles yet

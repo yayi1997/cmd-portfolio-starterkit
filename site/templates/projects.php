@@ -8,9 +8,11 @@
     <li>
       <a href="<?= $project->url() ?>">
         <figure>
-          <?= $project->images()->findBy("template", "image") ?>
-          <figcaption><?= $project->title() ?> <small><?= $project->year() ?></small></figcaption>
+          <?= $project->images()->findBy("template", "thumbnail") ?>
         </figure>
+        <h3><?= $project->title() ?></h3>
+        <p><?= $project->roles() ?> </p>
+        <p>Read more…</p>
       </a>
     </li>
     <?php endforeach ?>
