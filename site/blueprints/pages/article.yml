@@ -23,9 +23,8 @@ columns:
         time: false
         default: now
       text:
-        label: Your text
-        type: textarea
-        size: large
+        label: Editor
+        type: editor
 
   sidebar:
     width: 1/3

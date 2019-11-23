@@ -10,7 +10,8 @@
       <?= $page->deliverables() ?>
     </div>
     <div class="project-text text">
-      <?= $page->textarea()->kt() ?>
+      <?= $page->text()->blocks()->html() ?>
+
     </div>
 
   </article>

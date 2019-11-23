@@ -15,7 +15,7 @@
     </aside>
 
     <div class="text">
-      <?= $page->text()->kt() ?>
+      <?= $page->text()->blocks()->html() ?>
     </div>
 
   </div>

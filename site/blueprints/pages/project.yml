@@ -49,7 +49,6 @@ columns:
       content:
           type: fields
           fields:
-            textarea:
-              label: Your text
-              type: textarea
-              size: large
+            text:
+              label: Editor
+              type: editor

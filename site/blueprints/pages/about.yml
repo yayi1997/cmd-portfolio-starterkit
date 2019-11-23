@@ -13,9 +13,8 @@ columns:
   - width: 2/3
     fields:
       text:
-        label: Your text
-        type: textarea
-        size: huge
+        label: Editor
+        type: editor
 
   - width: 1/3
     sections:

@@ -6,7 +6,7 @@
   <article>
     <?php snippet('intro') ?>
     <p><?= $page->date()->toDate('d.m.Y') ?></p>
-    <?= $page->text()->kirbytext() ?>
+    <?= $page->text()->blocks()->html() ?>
 
     <a href="<?= url('articles') ?>">Back…</a>
 
