@@ -15,24 +15,20 @@
 
 <?php
 if ($blogPage = page('articles')): ?>
-<ul>
+<h2>View more articles</h2>
+<div class="row">
   <?php foreach ($blogPage->children()->listed()->paginate(3) as $article): ?>
-  <li>
+  <div class="col-4">
     <a href="<?= $article->url() ?>">
-
       <figure>
-
-        <figcaption>
-          <span>
-            <?= $article->images()->findBy("template", "thumbnail") ?>
-            <span class="example-name"><?= $article->title() ?></span>
-          </span>
-        </figcaption>
+        <?= $article->images()->findBy("template", "thumbnail") ?>
       </figure>
+      <h3><?= $article->title() ?></h3>
+      <p>Read more…</p>
     </a>
-  </li>
+  </div>
   <?php endforeach ?>
-</ul>
+</div>
 <?php endif ?>
 
 <?php snippet('footer') ?>

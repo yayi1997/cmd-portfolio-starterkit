@@ -16,26 +16,23 @@
 
   </article>
 
-
   <?php
   if ($projectsPage = page('projects')): ?>
-  <ul>
+  <h2>View more projects</h2>
+  <div class="row">
     <?php foreach ($projectsPage->children()->listed()->paginate(3) as $project): ?>
-    <li>
+    <div class="col-4">
       <a href="<?= $project->url() ?>">
-
         <figure>
-
-          <figcaption>
-            <span>
-              <span class="example-name"><?= $project->title() ?></span>
-            </span>
-          </figcaption>
+          <?= $project->images()->findBy("template", "thumbnail") ?>
         </figure>
+        <h3><?= $project->title() ?></h3>
+        <p><?= $project->roles() ?> </p>
+        <p>Read more…</p>
       </a>
-    </li>
+    </div>
     <?php endforeach ?>
-  </ul>
+  </div>
   <?php endif ?>
 
 </main>

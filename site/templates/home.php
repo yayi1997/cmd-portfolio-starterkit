@@ -4,15 +4,24 @@
 
 <main>
 
-<h1><?= $page->introductiontitle() ?></h1>
-<p><?= $page->introductiontext() ?></p>
-<?= $page->image()->html() ?>
-
+  <div class="row">
+    <div class="col-6">
+      <h1><?= $page->introductiontitle() ?></h1>
+      <p><?= $page->introductiontext() ?></p>
+      <a href="<?= $site->page('projects') ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">View my work</a>
+      <a href="<?= $site->page('about') ?>" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">More about me</a>
+    </div>
+    <div class="col-6">
+      <?= $page->image()->html() ?>
+    </div>
+  </div>
   <?php
   if ($projectsPage = page('projects')): ?>
-  <ul>
+  <h2>My work</h2>
+  <a href="<?= $site->page('projects') ?>">View all projects</a>
+  <div class="row">
     <?php foreach ($projectsPage->children()->listed()->paginate(3) as $project): ?>
-    <li>
+    <div class="col-4">
       <a href="<?= $project->url() ?>">
         <figure>
           <?= $project->images()->findBy("template", "thumbnail") ?>
@@ -21,9 +30,9 @@
         <p><?= $project->roles() ?> </p>
         <p>Read more…</p>
       </a>
-    </li>
+    </div>
     <?php endforeach ?>
-  </ul>
+  </div>
   <?php endif ?>
 
 </main>

@@ -5,9 +5,9 @@
 
   <?php snippet('intro') ?>
 
-  <ul class="articles"<?= attr(['data-even' => $page->children()->listed()->isEven()], ' ') ?>>
+  <div class="row"<?= attr(['data-even' => $page->children()->listed()->isEven()], ' ') ?>>
     <?php foreach ($page->children()->listed()->paginate(9) as $article): ?>
-    <li>
+    <div class="col-4">
       <a href="<?= $article->url() ?>">
         <figure>
           <?= $article->images()->findBy("template", "thumbnail") ?>
@@ -16,9 +16,9 @@
         <p><?= $article->roles() ?> </p>
         <p>Read more…</p>
       </a>
-    </li>
+    </div>
     <?php endforeach ?>
-  </ul>
+  </div>
 
 </section>
 

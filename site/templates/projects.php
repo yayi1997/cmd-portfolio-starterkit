@@ -2,10 +2,9 @@
 
 <main>
   <?php snippet('intro') ?>
-
-  <ul class="projects"<?= attr(['data-even' => $page->children()->listed()->isEven()], ' ') ?>>
+  <div class="row" <?= attr(['data-even' => $page->children()->listed()->isEven()], ' ') ?>>
     <?php foreach ($page->children()->listed()->paginate(9) as $project): ?>
-    <li>
+    <div class="col-4">
       <a href="<?= $project->url() ?>">
         <figure>
           <?= $project->images()->findBy("template", "thumbnail") ?>
@@ -14,9 +13,9 @@
         <p><?= $project->roles() ?> </p>
         <p>Read more…</p>
       </a>
-    </li>
+    </div>
     <?php endforeach ?>
-  </ul>
+  </div>
 </main>
 <?php snippet('pagination') ?>
 <?php snippet('footer') ?>
