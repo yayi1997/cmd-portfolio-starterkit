@@ -18,18 +18,21 @@
 
   <?php
   if ($projectsPage = page('projects')): ?>
-  <h2>View more projects</h2>
-  <div class="row">
+  <div class="row border-top">
+    <div class="col-12">
+      <h2 class="float-left">My work</h2>
+      <a class="float-right" href="<?= url('projects'); ?>">View all projects &#8594;</a>
+    </div>
     <?php foreach ($projectsPage->children()->listed()->paginate(3) as $project): ?>
-    <div class="col-4">
-      <a href="<?= $project->url() ?>">
-        <figure>
-          <?= $project->images()->findBy("template", "thumbnail") ?>
-        </figure>
-        <h3><?= $project->title() ?></h3>
-        <p><?= $project->roles() ?> </p>
-        <p>Read more…</p>
-      </a>
+    <div class="col-12 col-lg-4">
+      <div class="card">
+      <img src="<?= $project->images()->findBy("template", "thumbnail")->url(); ?>" class="card-img-top" alt="thumbnail" />
+      <div class="card-body">
+        <h4 class="card-title"><a href="<?= $project->url() ?>"><?= $project->title() ?></a></h4>
+        <p class="card-text"><?= $project->roles() ?></p>
+        <a href="<?= $project->url() ?>">Read more &#8594;</a>
+      </div>
+    </div>
     </div>
     <?php endforeach ?>
   </div>
