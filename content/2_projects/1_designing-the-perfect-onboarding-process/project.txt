@@ -18,6 +18,128 @@ Deliverables: Empathymap, Wireframes, Persona's
 
 ----
 
+Text:
+
+[
+    {
+        "attrs": [],
+        "content": "Heading 1",
+        "id": "_8mgii7n73",
+        "type": "h1"
+    },
+    {
+        "attrs": [],
+        "content": "Heading 2",
+        "id": "_mvbw9p8m5",
+        "type": "h2"
+    },
+    {
+        "attrs": [],
+        "content": "Heading 3",
+        "id": "_yxpdwjzuk",
+        "type": "h3"
+    },
+    {
+        "attrs": [],
+        "content": "Bullet list",
+        "id": "_kv7cm8v9d",
+        "type": "ul"
+    },
+    {
+        "attrs": {
+            "indent": 0
+        },
+        "content": "Bullet list",
+        "id": "_08ifj03rw",
+        "type": "ul"
+    },
+    {
+        "attrs": {
+            "indent": 0
+        },
+        "content": "Bullet list",
+        "id": "_kjtk0ujrw",
+        "type": "ul"
+    },
+    {
+        "attrs": [],
+        "content": "This is a quote, don't you think?",
+        "id": "_cwnjhuy68",
+        "type": "blockquote"
+    },
+    {
+        "attrs": [],
+        "content": "Numbered list",
+        "id": "_nfbhfl436",
+        "type": "ol"
+    },
+    {
+        "attrs": {
+            "indent": 0
+        },
+        "content": "Numbered list",
+        "id": "_03nv0yced",
+        "type": "ol"
+    },
+    {
+        "attrs": {
+            "indent": 0
+        },
+        "content": "Numbered list",
+        "id": "_7rfdykoe8",
+        "type": "ol"
+    },
+    {
+        "attrs": [],
+        "content": "",
+        "id": "_n69m23272",
+        "type": "hr"
+    },
+    {
+        "attrs": [],
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "id": "_5o4r373i6",
+        "type": "paragraph"
+    },
+    {
+        "attrs": {
+            "guid": "/pages/projects+designing-the-perfect-onboarding-process/files/16-9-dummy.jpg",
+            "src": "http://localhost:8888/cmd-portfolio-starterkit/media/pages/projects/designing-the-perfect-onboarding-process/2572562093-1579364703/16-9-dummy.jpg",
+            "id": "projects/designing-the-perfect-onboarding-process/16-9-dummy.jpg",
+            "ratio": 1.7777777777777777,
+            "caption": "Caption yeah!"
+        },
+        "content": "",
+        "id": "_u394bdt1a",
+        "type": "image"
+    },
+    {
+        "attrs": {
+            "src": "https://youtu.be/Qb7dPpDDgq8",
+            "caption": "Caption yeah!"
+        },
+        "content": "",
+        "id": "_k2lm3y32f",
+        "type": "video"
+    },
+    {
+        "attrs": [],
+        "content": "I don't know what this is?",
+        "id": "_r7s0ov601",
+        "type": "kirbytext"
+    },
+    {
+        "attrs": {
+            "language": "css"
+        },
+        "content": "And what should this be?",
+        "id": "_ymeh8uuyc",
+        "type": "code"
+    }
+]
+
+----
+
 Textarea:
 
 ## Introduction

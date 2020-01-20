@@ -5,20 +5,11 @@
 <main>
     <?php snippet('intro') ?>
 
-  <div class="layout">
-
-    <aside>
-      <section>
-        <h2>Resume</h2>
-          <a href="<?= $page->slug() ?>/<?= $page->resume()->html() ?>" target="_blank">Download resumé</a>
-      </section>
-    </aside>
-
     <div class="text">
       <?= $page->text()->blocks()->html() ?>
     </div>
-
-  </div>
+        <h2>Resume</h2>
+          <a href="<?= $page->files()->template('document') ?>" target="_blank">Download resumé</a>
 </main>
 
 <?php snippet('footer') ?>
