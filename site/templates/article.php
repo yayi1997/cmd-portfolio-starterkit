@@ -20,7 +20,7 @@
     </div>
     <?php foreach ($blogPage->children()->listed()->paginate(3) as $article): ?>
     <div class="col-12 col-lg-4">
-      <div class="card">
+      <div class="card h-100">
       <img src="<?= $article->images()->findBy("template", "thumbnail")->url(); ?>" class="card-img-top" alt="thumbnail" />
       <div class="card-body">
         <h4 class="card-title"><a href="<?= $article->url() ?>"><?= $article->title() ?></a></h4>
