@@ -18,7 +18,7 @@ columns:
 
   - width: 1/3
     sections:
-      thumbnail:
+      resume:
         headline: Your resumé
         type: files
         template: document
