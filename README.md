@@ -1,3 +1,5 @@
+# IF YOUR READING THIS THE WEBHOOK WORKS
+
 # Kirby Starterkit
 
 Kirby is a file-based CMS.
