@@ -1,4 +1,4 @@
-# BLap
+# Bam!
 
 # Kirby Starterkit
 
