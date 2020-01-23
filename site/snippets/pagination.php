@@ -1,6 +1,5 @@
-<?php   
-  $list = $page->children()->paginate(9) // FIXME Magic number, this should probably be a configurable option
-  $pagination = $list->pagination() ?>
+<? $list = $page->children()->paginate(9); // FIXME Magic number, this should probably be a configurable option ?>
+<? $pagination = $list->pagination(); ?>
 
 <?php if ($pagination->hasPages()): ?>
 <nav>
