@@ -1,9 +1,17 @@
-<?php snippet('header') ?>
-
-<main>
-  <?php snippet('intro') ?>
-  <div class="text">
-    <?= $page->text()->kt() ?>
+<!doctype html>
+<html lang="en">
+<?php snippet('head') ?>
+<body>
+  <?php snippet('header') ?>
+  <div class="container">
+    <main>
+      <?php snippet('intro') ?>
+      <div class="text">
+        <?= $page->text()->kt() ?>
+      </div>
+    </main>
+  <?php snippet("footer") ?>
   </div>
-</main>
-<?php snippet('footer') ?>
+<?php snippet('scripts') ?>
+</body>
+</html>
