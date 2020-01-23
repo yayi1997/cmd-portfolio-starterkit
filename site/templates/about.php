@@ -1,5 +1,3 @@
-<?php?>
-
 <?php snippet('header') ?>
 <div class="row">
   <div class="col-12 col-lg-9">

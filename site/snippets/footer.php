@@ -1,4 +1,3 @@
-<?php?>
   <footer>
     <div class="row border-top">
       <div class="col d-flex justify-content-center">
