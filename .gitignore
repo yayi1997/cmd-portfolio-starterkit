@@ -4,8 +4,12 @@
 Icon
 .DS_Store
 
+# Webhook
+# -------
+/webhook/*
+
 # Local Composer
-#
+# --------------
 
 bin/composer
 composer.phar
