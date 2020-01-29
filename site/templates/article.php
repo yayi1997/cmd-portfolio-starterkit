@@ -1,5 +1,8 @@
-<?php snippet('header') ?>
-<?php snippet('menu') ?>
+<!doctype html>
+<html lang="en">
+<?php snippet('head') ?>
+<body>
+  <?php snippet('header') ?>
 
 
 <section class="content article">
@@ -33,4 +36,8 @@
   </div>
   <?php endif ?>
 
-<?php snippet('footer') ?>
+  <?php snippet("footer") ?>
+  </div>
+<?php snippet('scripts') ?>
+</body>
+</html>
