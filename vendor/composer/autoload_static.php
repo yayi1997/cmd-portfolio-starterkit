@@ -7,16 +7,13 @@ namespace Composer\Autoload;
 class ComposerStaticInit90b6b66538aa2bd2e5e37a89e45fd993
 {
     public static $files = array (
+        '7e9bd612cc444b3eed788ebbe46263a0' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/autoload.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '04c6c5c2f7095ccf6c481d3e53e1776f' => __DIR__ . '/..' . '/mustangostang/spyc/Spyc.php',
         'f864ae44e8154e5ff6f4eec32f46d37f' => __DIR__ . '/../..' . '/kirby/config/setup.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'Z' => 
-        array (
-            'Zend\\Escaper\\' => 13,
-        ),
         'W' => 
         array (
             'Whoops\\' => 7,
@@ -35,6 +32,11 @@ class ComposerStaticInit90b6b66538aa2bd2e5e37a89e45fd993
             'PHPMailer\\PHPMailer\\' => 20,
             'PHPHtmlParser\\' => 14,
         ),
+        'L' => 
+        array (
+            'Laminas\\ZendFrameworkBridge\\' => 28,
+            'Laminas\\Escaper\\' => 16,
+        ),
         'K' => 
         array (
             'Kirby\\' => 6,
@@ -42,10 +44,6 @@ class ComposerStaticInit90b6b66538aa2bd2e5e37a89e45fd993
     );
 
     public static $prefixDirsPsr4 = array (
-        'Zend\\Escaper\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/zendframework/zend-escaper/src',
-        ),
         'Whoops\\' => 
         array (
             0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
@@ -69,6 +67,14 @@ class ComposerStaticInit90b6b66538aa2bd2e5e37a89e45fd993
         'PHPHtmlParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/paquettg/php-html-parser/src/PHPHtmlParser',
+        ),
+        'Laminas\\ZendFrameworkBridge\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src',
+        ),
+        'Laminas\\Escaper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laminas/laminas-escaper/src',
         ),
         'Kirby\\' => 
         array (
@@ -308,6 +314,15 @@ class ComposerStaticInit90b6b66538aa2bd2e5e37a89e45fd993
         'Kirby\\Toolkit\\V' => __DIR__ . '/../..' . '/kirby/src/Toolkit/V.php',
         'Kirby\\Toolkit\\View' => __DIR__ . '/../..' . '/kirby/src/Toolkit/View.php',
         'Kirby\\Toolkit\\Xml' => __DIR__ . '/../..' . '/kirby/src/Toolkit/Xml.php',
+        'Laminas\\Escaper\\Escaper' => __DIR__ . '/..' . '/laminas/laminas-escaper/src/Escaper.php',
+        'Laminas\\Escaper\\Exception\\ExceptionInterface' => __DIR__ . '/..' . '/laminas/laminas-escaper/src/Exception/ExceptionInterface.php',
+        'Laminas\\Escaper\\Exception\\InvalidArgumentException' => __DIR__ . '/..' . '/laminas/laminas-escaper/src/Exception/InvalidArgumentException.php',
+        'Laminas\\Escaper\\Exception\\RuntimeException' => __DIR__ . '/..' . '/laminas/laminas-escaper/src/Exception/RuntimeException.php',
+        'Laminas\\ZendFrameworkBridge\\Autoloader' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/Autoloader.php',
+        'Laminas\\ZendFrameworkBridge\\ConfigPostProcessor' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/ConfigPostProcessor.php',
+        'Laminas\\ZendFrameworkBridge\\Module' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/Module.php',
+        'Laminas\\ZendFrameworkBridge\\Replacements' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/Replacements.php',
+        'Laminas\\ZendFrameworkBridge\\RewriteRules' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/RewriteRules.php',
         'League\\ColorExtractor\\Color' => __DIR__ . '/..' . '/league/color-extractor/src/League/ColorExtractor/Color.php',
         'League\\ColorExtractor\\ColorExtractor' => __DIR__ . '/..' . '/league/color-extractor/src/League/ColorExtractor/ColorExtractor.php',
         'League\\ColorExtractor\\Palette' => __DIR__ . '/..' . '/league/color-extractor/src/League/ColorExtractor/Palette.php',
@@ -329,6 +344,7 @@ class ComposerStaticInit90b6b66538aa2bd2e5e37a89e45fd993
         'PHPHtmlParser\\Exceptions\\CircularException' => __DIR__ . '/..' . '/paquettg/php-html-parser/src/PHPHtmlParser/Exceptions/CircularException.php',
         'PHPHtmlParser\\Exceptions\\CurlException' => __DIR__ . '/..' . '/paquettg/php-html-parser/src/PHPHtmlParser/Exceptions/CurlException.php',
         'PHPHtmlParser\\Exceptions\\EmptyCollectionException' => __DIR__ . '/..' . '/paquettg/php-html-parser/src/PHPHtmlParser/Exceptions/EmptyCollectionException.php',
+        'PHPHtmlParser\\Exceptions\\LogicalException' => __DIR__ . '/..' . '/paquettg/php-html-parser/src/PHPHtmlParser/Exceptions/LogicalException.php',
         'PHPHtmlParser\\Exceptions\\NotLoadedException' => __DIR__ . '/..' . '/paquettg/php-html-parser/src/PHPHtmlParser/Exceptions/NotLoadedException.php',
         'PHPHtmlParser\\Exceptions\\ParentNotFoundException' => __DIR__ . '/..' . '/paquettg/php-html-parser/src/PHPHtmlParser/Exceptions/ParentNotFoundException.php',
         'PHPHtmlParser\\Exceptions\\StrictException' => __DIR__ . '/..' . '/paquettg/php-html-parser/src/PHPHtmlParser/Exceptions/StrictException.php',
@@ -380,10 +396,6 @@ class ComposerStaticInit90b6b66538aa2bd2e5e37a89e45fd993
         'Whoops\\Util\\Misc' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/Misc.php',
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
-        'Zend\\Escaper\\Escaper' => __DIR__ . '/..' . '/zendframework/zend-escaper/src/Escaper.php',
-        'Zend\\Escaper\\Exception\\ExceptionInterface' => __DIR__ . '/..' . '/zendframework/zend-escaper/src/Exception/ExceptionInterface.php',
-        'Zend\\Escaper\\Exception\\InvalidArgumentException' => __DIR__ . '/..' . '/zendframework/zend-escaper/src/Exception/InvalidArgumentException.php',
-        'Zend\\Escaper\\Exception\\RuntimeException' => __DIR__ . '/..' . '/zendframework/zend-escaper/src/Exception/RuntimeException.php',
         'claviska\\SimpleImage' => __DIR__ . '/..' . '/claviska/simpleimage/src/claviska/SimpleImage.php',
         'stringEncode\\Encode' => __DIR__ . '/..' . '/paquettg/string-encode/src/stringEncode/Encode.php',
         'stringEncode\\Exception' => __DIR__ . '/..' . '/paquettg/string-encode/src/stringEncode/Exception.php',

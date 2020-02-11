@@ -58,7 +58,8 @@
           <hr>
           <template v-if="menuItems.length">
             <k-dropdown-item
-              v-for="menuItem in menuItems"
+              v-for="(menuItem, index) in menuItems"
+              :key="index"
               :icon="menuItem.icon"
               :disabled="menuItem.disabled"
               @click="menuItem.click">
@@ -101,6 +102,7 @@ export default {
     open() {
       this.menuItems = this.menu();
       this.$refs.blockOptions.toggle();
+      this.$emit("focus");
     },
     close() {
       this.menuItems = [];
@@ -112,7 +114,7 @@ export default {
     },
     onClose() {
       this.mode = null;
-    }
+    },
   }
 };
 </script>

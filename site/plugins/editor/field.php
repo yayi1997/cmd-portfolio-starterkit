@@ -41,7 +41,7 @@ return [
     ],
     'computed' => [
         'isSupported' => function () {
-            if (version_compare($this->kirby()->version(), '3.3.0')) {
+            if (version_compare('3.3.0', $this->kirby()->version(), '>=')) {
                 throw new Exception('The editor requires Kirby version 3.3.0 or higher');
             }
         },
@@ -50,7 +50,7 @@ return [
         }
     ],
     'methods' => [
-        'toBlocks' => function($value) {
+        'toBlocks' => function ($value) {
             return Kirby\Editor\Blocks::factory($value, $this->model());
         },
         'toValue' => function ($value) {
@@ -131,7 +131,6 @@ return [
                 'pattern' => 'export',
                 'method' => 'POST',
                 'action' => function () {
-
                     $data = get('data');
                     $type = get('type');
 
