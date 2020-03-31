@@ -2,8 +2,8 @@ Title: Home
 
 ----
 
-Introductiontitle: Hello! I'm John Doe.
+Introductiontitle: Hello! I'm Ya Yi
 
 ----
 
-Introductiontext: Currently I am looking for an internship where I can develop my skills as a third year Communication and Multimediadesign student.
+Introductiontext: Currently I am looking for an internship where I can develop my skills as a second-year Communication and Multimedia design student.
